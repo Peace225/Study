@@ -74,7 +74,6 @@ export default function Navbar() {
       path: "/universites",
       dropdown: [
         { label: "Recherchez votre formation", path: "/universites/recherche" },
-        { label: "Nos universités partenaires", path: "/universites/partenaires" },
         { label: "Guide des formations & diplômes", path: "/universites/guide" },
       ]
     },

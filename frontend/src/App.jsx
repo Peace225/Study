@@ -57,6 +57,7 @@ const NouvelleZelandePage = lazy(() => import("./pages/NouvelleZelandePage"));
 // Sous-pages Universités (Nouveau !)
 const RecherchePage = lazy(() => import("./pages/RecherchePage"));
 const GuidePage = lazy(() => import("./pages/GuidePage"));
+const PageConseil = lazy(() => import("./pages/PageConseil"));
 
 // Sous-pages Événements
 const WebinairesPage = lazy(() => import("./pages/WebinairesPage"));
@@ -100,6 +101,7 @@ export default function App() {
             {/* ROUTES : SERVICES */}
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/conseil" element={<ConseilPage />} />
+            <Route path="/services/page" element={<PageConseil />} />
             <Route path="/services/elite" element={<ElitePage />} />
             <Route path="/services/retour" element={<RetourPage />} />
             <Route path="/services/ielts" element={<IeltsPage />} />

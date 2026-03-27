@@ -86,7 +86,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               {/* Bouton Principal : Bleu Marine qui devient Jaune Or au survol */}
               <Link
-                to="/universites"
+                to="/universites/recherche"
                 className="bg-[#1a365d] text-white px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#eab308] hover:text-[#1a365d] transition-all duration-300 shadow-2xl text-center"
               >
                 Rechercher une formation
@@ -94,7 +94,7 @@ export default function Home() {
 
               {/* Bouton Secondaire : Blanc qui s'accorde à la charte au survol */}
               <Link
-                to={currentUser ? "/apply" : "/services"}
+                to={currentUser ? "/apply" : "/services/page"}
                 className="bg-white text-gray-900 px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#eab308] hover:text-[#1a365d] transition-all duration-300 shadow-2xl text-center"
               >
                 {currentUser ? "Suivre mon dossier" : "Nos services d'accompagnement"}

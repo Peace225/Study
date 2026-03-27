@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Users, Globe, GraduationCap, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function PartnerSection() {
@@ -159,13 +160,13 @@ export default function PartnerSection() {
           <strong className="font-semibold text-gray-900">LM Global Education</strong> est votre partenaire privilégié pour accéder à un réseau en expansion constante de plus de <strong className="font-semibold text-gray-900">200 universités étrangères de premier plan</strong>. Représentant officiel en France de ces établissements, nous développons sans cesse nos partenariats, assurant ainsi une offre éducative de haute qualité, reconnue internationalement et en phase avec les exigences du marché français.
         </p>
 
-        {/* Bouton Premium avec Effet Glow */}
-        <button className="relative group inline-block mt-4">
+       {/* Bouton Premium avec Effet Glow */}
+        <Link to="/universites" className="relative group inline-block mt-4">
           <div className="absolute -inset-1 bg-[#1a365d] blur opacity-20 group-hover:opacity-40 transition duration-500 rounded-sm"></div>
-          <div className="relative bg-[#1a365d] text-white px-12 py-5 text-[13px] font-bold uppercase tracking-[0.2em] transition-all duration-500 group-hover:bg-[#eab308] group-hover:text-[#1a365d] border border-transparent">
+          <div className="relative bg-[#1a365d] text-white px-12 py-5 text-[13px] font-bold uppercase tracking-[0.2em] transition-all duration-500 group-hover:bg-[#eab308] group-hover:text-[#1a365d] border border-transparent flex items-center justify-center">
             VOIR LES UNIVERSITÉS
           </div>
-        </button>
+        </Link>
 
       </div>
     </section>
